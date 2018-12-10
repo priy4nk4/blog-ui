@@ -1,0 +1,26 @@
+<div class="container">
+<div class="row">
+    <div class="col-md-2 blog-main"></div>
+
+    <div class="col-md-8 blog-main col-centered">
+        <div class="form-group">
+        
+            <label for="blog-title">Blog Title</label>
+            <input #blogTitle name="blogTitle"  class="form-control"  placeholder="My First Blog">
+            
+            <label for="blog-text">Blog Text</label>
+            <textarea #blogText name="blogText"  class="form-control"  placeholder="Write your blog..." ></textarea>
+
+            <label for="author">Author Name</label>
+            <input #authorName name="authorName"  class="form-control"  placeholder="John Doe">
+
+
+            <button class="btn btn-primary" (click)="sendMessage(blogTitle, blogText, authorName)">Submit</button>
+          </div>
+
+    </div><!-- /.row -->
+</div>
+</div>
+
+
+<!-- <app-post-list></app-post-list> -->
